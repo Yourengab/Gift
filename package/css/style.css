@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --main: #8a6cff;
+  --second: #fcc353;
+  --box: #161520;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+.active {
+  font-weight: 800;
+  color: var(--second);
+}
+.active2 {
+  font-weight: 800;
+  color: var(--box);
+}
+body {
+  background-color: var(--main);
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.img {
+  margin: 0 auto;
+}
+.img img {
+  margin-top: 50px;
+  transform: scale(0.9);
+}
+.text {
+  text-align: center;
+  margin-top: -100px;
+  color: white;
+}
+.text p {
+  font-size: 20px;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.btn {
+  margin-top: 20px;
+  margin-bottom: 70px;
+  display: block;
+  background-color: var(--box);
+  padding: 15px 50px;
+  border-radius: 10px;
+  color: white;
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+}
+.btn:hover {
+  text-decoration: none;
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+}
+.popUp {
+  width: 100%;
+  height: 100vh;
+  background: rgba(78, 78, 78, 0.5);
+  backdrop-filter: blur(37px);
+  position: absolute;
+  padding-bottom: 100px;
+  display: none;
+  z-index: 10;
+}
+.popUp.show {
+  display: block;
+}
+.pop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 600px;
+  padding: 30px;
+  background-color: var(--box);
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+.pop img {
+  width: 100px;
+}
+.popText {
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+}
+.popText p {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 10px;
+  font-size: 20px;
+}
+.popBtn {
+  margin-top: 40px;
+  display: flex;
+  font-weight: 500;
+}
+.yes {
+  background-color: var(--second);
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  margin-right: 20px;
+}
+a {
+  text-decoration: none;
+  color: var(--box);
+}
+.no {
+  text-align: center;
+  background-color: var(--second);
+  width: 100px;
+  height: 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.what {
+  height: 50px;
+  width: 50px;
+  background-color: var(--box);
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border-radius: 100%;
+  text-align: center;
+  color: white;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: 500;
+}
+.inisial {
+  height: 150px;
+  width: 100%;
+  background-color: var(--box);
+  position: absolute;
+  top: 0;
+  text-align: center;
+  color: white;
+  line-height: 150px;
+  font-size: 16px;
+  font-weight: 300;
+  transform: translateY(-100%);
+  display: none;
+}
+.wishBody {
+  overflow: hidden;
+  padding: 50px;
+}
+.mainWish {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.wishHead {
+  color: white;
+  overflow-y: scroll;
+  padding-bottom: 500px;
+}
+.wishHead::-webkit-scrollbar {
+  display: none;
+}
+.wishHead h1 {
+  font-size: 42px;
+}
+.wishHead h2 {
+  font-size: 28px;
+}
+.wishHead p {
+  margin-top: 25px;
+  color: #dad8d8;
+  font-size: 20px;
+  max-width: 50%;
+}
+.wish {
+  margin-top: 50px;
+}
+.goals {
+  margin-top: 50px;
+}
+.slider {
+  animation: animate 4s alternate infinite ease-in-out;
+  margin-top: -1500px;
+}
+.slider .slide {
+  max-width: 400px;
+  max-height: 400px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.slide img {
+  width: 400px;
+  height: 400px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  transition: 300ms ease-in-out;
+}
+.slide img:hover {
+  transform: scale(1.05);
+}
+.nextBack {
+  display: flex;
+}
+.nextBtn {
+  margin-top: 50px;
+  width: 150px;
+  height: 55px;
+  border-radius: 10px;
+  background-color: var(--box);
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.next,
+.back {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  line-height: 55px;
+}
+.back {
+  margin-left: 20px;
+}
+.finBody {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  width: 550px;
+  background-color: var(--box);
+  border-radius: 20px;
+}
+.finImg img {
+  width: 100px;
+}
+.finText {
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+.finText h2 {
+  font-size: 34px;
+}
+.finText p {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.finBtn {
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  line-height: 40px;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  background-color: #fcc353;
+  font-weight: 500;
+  color: white;
+}
+@keyframes animate {
+  0% {
+    margin-top: -100px;
+  }
+  100% {
+    margin-top: -1500px;
+  }
+}
+@keyframes animate2 {
+  0% {
+    margin-left: -100px;
+  }
+  100% {
+    margin-left: -1500px;
+  }
+}
+/* Responsive */
+@media screen and (max-height: 650px) {
+  .header {
+    padding-bottom: 95px;
+  }
+}
+@media screen and (max-height: 850px) {
+  .what {
+    top: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wishHead p {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 940px) {
+  .slider {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .img img {
+    width: 600px;
+    height: 500px;
+  }
+  .text {
+    margin-top: -50px;
+  }
+  .pop {
+    width: 400px;
+  }
+  .fin {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .img img {
+    width: 400px;
+  }
+  .fin {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .img img {
+    width: 380px;
+  }
+  .wishBody {
+    padding: 50px 20px;
+  }
+  .text {
+    padding: 0 20px;
+  }
+  .text p {
+    max-width: 100%;
+  }
+  .pop {
+    width: 300px;
+  }
+  .popText p {
+    font-size: 18px;
+  }
+  .wishHead p {
+    max-width: 100%;
+  }
+  .fin {
+    width: 300px;
+    padding: 50px 30px;
+  }
+}
