@@ -131,34 +131,7 @@ a {
   margin-left: 20px;
   cursor: pointer;
 }
-.what {
-  height: 50px;
-  width: 50px;
-  background-color: var(--box);
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  border-radius: 100%;
-  text-align: center;
-  color: white;
-  line-height: 50px;
-  font-size: 24px;
-  font-weight: 500;
-}
-.inisial {
-  height: 150px;
-  width: 100%;
-  background-color: var(--box);
-  position: absolute;
-  top: 0;
-  text-align: center;
-  color: white;
-  line-height: 150px;
-  font-size: 16px;
-  font-weight: 300;
-  transform: translateY(-100%);
-  display: none;
-}
+
 .wishBody {
   overflow: hidden;
   padding: 50px;
@@ -171,7 +144,7 @@ a {
 .wishHead {
   color: white;
   overflow-y: scroll;
-  padding-bottom: 500px;
+  padding-bottom: 200px;
 }
 .wishHead::-webkit-scrollbar {
   display: none;
